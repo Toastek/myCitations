@@ -1,0 +1,25 @@
+<ion-menu [content]="nav">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="onLoadPageFromMenu(tabsPage, 0)">
+        <ion-icon name="quote" item-left></ion-icon>
+        Mes Citations
+      </button>
+      <button ion-item (click)="onLoadPageFromMenu(tabsPage, 1)">
+        <ion-icon name="book" item-left></ion-icon>
+        Voir la collection
+      </button>
+      <button ion-item (click)="onLoadPageFromMenu(settingsPage, 3)">
+        <ion-icon name="settings" item-left></ion-icon>
+        Paramètres
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="tabsPage" #nav></ion-nav>

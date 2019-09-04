@@ -1,0 +1,17 @@
+page-quotes {
+  .alt {
+    background-color: color($colors, altQuoteBackground);
+  }
+
+  .author {
+    color: #ccc;
+    text-align: right;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+
+    &::before {
+      content: "- ";
+    }
+  }
+}

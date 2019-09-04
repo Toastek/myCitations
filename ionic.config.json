@@ -1,0 +1,7 @@
+{
+  "name": "myCitations",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
